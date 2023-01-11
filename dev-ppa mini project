@@ -1,0 +1,58 @@
+#include <stdio.h>
+int main()
+
+{
+int a;
+int re;
+int food;
+printf("Dear User,\n");
+printf("Greetings of the day!\n\n");
+printf("Welcome to the online ordering portal\n\n");
+printf("Please Choose an Option: \n");
+printf("Press 1 - If you want to order \n");
+printf("Press 2 - If you want to cancel order\n");
+printf("Press 3 - If you want to check the location of your order\n");
+scanf("%d",&a);
+
+switch (a)
+{
+case 1:
+printf("Which type of food ypu like to eat:\n");
+printf("Enter 1 for PIZZA \n");
+printf("Enter 2 for BURGERS\n");
+printf("Enter 3 for DOSA'S\n");
+printf("Enter 4 for WRAPS\n");
+printf("Enter 5 for BIRYANI\n");
+printf("Enter 6 for SANDWICH \n");
+scanf("%d", &food);
+printf("Dear User,\n");
+printf("Your order have been placd to you \n Please wait till we assign you a delivery partner... Thank you");
+break;
+
+case 2:
+printf("Please Choose an Option:...\n");
+printf("Enter 1 if its getting too late \n");
+printf("Enter 2 another reason\n");
+scanf("%d",&re);
+
+switch(re){
+case 1: printf(" Your order is being cancled \n Thank You for Coming.");
+break;
+case 2: printf("Your order is being cancled\n Thank you!"); 
+break;
+}
+break;
+
+case 3: 
+printf("Your order is near by your\n\n");
+printf("It is ariving with in 10 min\n");
+printf("be patiencet\n");
+printf("ooooh look its here\n");
+printf("your payment is done\n");
+printf("Enjoy your meal\n");
+printf("\n Have a Good Day!\n");
+default:
+break;
+}
+return 0;
+}
